@@ -61,6 +61,9 @@ User can also select which YOLOv7 model to use by updating the model path in `ma
 - yolov7_736x1280
 
 Choose the model depending on the required balance between detection precision and inference speed.
+<p align="center">
+  <img src="assets/obj-det.jpg" alt="Object Detection" width="500">
+</p>
 
 ## Running CARLA + SUMO Co-Simulation
 1. Start the CARLA client first.
@@ -73,6 +76,9 @@ python SUMO/run_synchronization.py examples/Town01.sumocfg --sumo-gui
 python SUMO/spawn_npc_sumo.py -n 10 --tls-manager carla --sumo-gui
 ```
 This creates synchronized traffic between CARLA and SUMO, allowing the ego vehicle to interact with realistic traffic while object detection continues in real time.
+<p align="center">
+  <img src="assets/carla-sumo.jpg" alt="CARLA + SUMO Co-Simulation" width="700">
+</p>
 
 ### Workflow
 1. Launch CARLA.
